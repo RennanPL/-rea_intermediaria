@@ -1,0 +1,19 @@
+ #código com naZero
+    
+  for (itm in ls()) {
+    if (is.data.frame(get(itm)) & itm %in% c('naZero', 'sinistrosRecifeRaw')) {
+      print(formatC(c(itm, object.size(get(itm))), format = "d", width = 30), quote = FALSE)
+    }
+  }
+  
+  #por algum motivo que não consegui identificar não consegui fazer com que ele me desse o naZero nesse código :/
+  
+  #codigo com a base trip review
+  
+  for (itm in ls()) {
+    if (is.data.frame(get(itm)) & itm %in% c('Trip_review_database', 'sinistrosRecifeRaw')) {
+      print(formatC(c(itm, object.size(get(itm))), format = "d", width = 30), quote = FALSE)
+    }
+  }
+  
+  #sinistros recife estava ocupando mais memória
